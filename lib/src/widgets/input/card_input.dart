@@ -71,7 +71,7 @@ class _CardInputState extends State<CardInput> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              new Flexible(
+              new Expanded(
                 child: new DateField(
                   key: ValueKey("ExpiryKey"),
                   card: _card,
@@ -83,7 +83,7 @@ class _CardInputState extends State<CardInput> {
                 ),
               ),
               new SizedBox(width: 15.0),
-              new Flexible(
+              new Expanded(
                   child: new CVCField(
                 key: Key("CVVKey"),
                 card: _card,
